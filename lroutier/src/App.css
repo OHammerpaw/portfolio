@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(129,241,247);
 }
 
 .App-header {
@@ -13,9 +14,16 @@
   color: rgb(182, 131, 62);
 }
 
+@font-face {
+  src: local("FinkHeavy"),
+    url("./FinkHeavy/FinkHeavy.ttf") format("truetype");
+  font-family: "FinkHeavy";
+}
+
+
 .p {
   color: rgb(182, 131, 62);
-
+  background-color: rgb(129,241,247);
 }
 
 /* @keyframes App-logo-spin {
