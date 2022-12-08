@@ -8,7 +8,9 @@ const PortfolioHeader = () => {
 
   return(
   <div>
-    <Image style={{marginBottom: '.5em', marginTop:'.5em'}} src={`${process.env.PUBLIC_URL}/images/header.png`} />
+    <Container fluid  align='center' >
+        <Image style={{marginBottom: '.5em', marginTop:'.5em'}} src={`${process.env.PUBLIC_URL}/images/header.png`} />
+    </Container>
     <Container fluid  textAlign='center' className='header'>
         {/* <Header as='h1' content='Lauren Routier' style={{fontfamily: 'FinkHeavy',fontSize: '4em', marginTop: '1em', color:'rgb(196, 141, 63)'}}> */}
         <Header>
