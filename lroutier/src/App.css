@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  background-color: rgb(255,255,250);
+  background-color: whitesmoke;
 }
 
 .App-header {
-  background-color: rgb(129,241,247);
+  background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 
 .p {
   color: rgb(182, 131, 62);
-  background-color: rgb(129,241,247);
+  background-color: whitesmoke;
 }
 
 /* @keyframes App-logo-spin {

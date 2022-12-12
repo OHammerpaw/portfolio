@@ -10,15 +10,15 @@ const Projects = ()=> {
 
 	const projects = [
 		
-        {
-			header: 'Bam Pow',
-			description:"This is an application where users can add to a continuously growing database of comic books. Users will be able to 'favorite' their favorite authors, characters, illustrators, and publishers. These 'favorites' guide the user to other comics they may be interested in. Never miss an issue featuring your favorite character again! Admins have the ability to delete and edit entries making this a great app for comic book shops!",
-			meta:'Django, Python, PostgreSQL, React, Semantic UI',
-			image:"",
-			href: '',
-			signIn: ''
+        // {
+		// 	header: 'Bam Pow',
+		// 	description:"This is an application where users can add to a continuously growing database of comic books. Users will be able to 'favorite' their favorite authors, characters, illustrators, and publishers. These 'favorites' guide the user to other comics they may be interested in. Never miss an issue featuring your favorite character again! Admins have the ability to delete and edit entries making this a great app for comic book shops!",
+		// 	meta:'Django, Python, PostgreSQL, React, Semantic UI',
+		// 	image:"",
+		// 	href: '',
+		// 	signIn: ''
 			
-		},
+		// },
         
         {
 			header: 'Honey Badges',
@@ -50,26 +50,28 @@ const Projects = ()=> {
 	]
 	
  const projectCards = projects.map(project =>(
-	<Card key={project.header}>
+	<Card key={project.header} style={{backgroundColor: 'rgb(255,255,250)'}}>
 	
 			<Image src={`${process.env.PUBLIC_URL}/images/${project.image}`} wrapped ui={false}/>
 	
 		<Card.Content>
 		
-		
-		<Card.Header size='huge'>{project.header}</Card.Header>
-		<Card.Meta>{project.meta}</Card.Meta>
-		<Card.Description>{project.description}</Card.Description><br></br>
-		<Card.Meta>{project.signIn}</Card.Meta>
-		</Card.Content>
-		<Card.Content extra className='ui one button'>
-		<a
-			href={project.href}
-			target='_blank'
-			rel="noopener"
-			aria-label={project.header}
 			
-		><Button basic color='brown'>Check Out the Live Site</Button></a>
+			<Card.Header size='huge'>{project.header}</Card.Header>
+			<Card.Meta>{project.meta}</Card.Meta>
+			<Card.Description>{project.description}</Card.Description><br></br>
+			<Card.Meta>{project.signIn}</Card.Meta>
+			</Card.Content>
+			<Card.Content extra className='ui one button'>
+			<a
+				href={project.href}
+				target='_blank'
+				rel="noopener"
+				aria-label={project.header}
+				
+			>
+				<Button basic color='brown'>Check Out the Live Site</Button>
+			</a>
 		
 		</Card.Content>
 	</Card>
@@ -77,8 +79,10 @@ const Projects = ()=> {
  ))
 	return(
 		<div>
-			<Segment fluid style={{ padding: '3em', marginBottom:'2em', backgroundColor: 'rgb(129,241,247)' }} verticalAlign='justify' color='brown'>
+			<Segment fluid style={{ backgroundColor: '255,255,250' }} verticalAlign='justify' color='brown'>
 				<Header size='huge' textAlign='center' color='brown' font-family='FinkHeavy' >Projects</Header>
+			</Segment>
+			<Segment fluid style={{ padding: '3em', marginBottom:'2em', backgroundColor: 'rgb(129,241,247)' }} verticalAlign='justify' color='brown'>
 				<Card.Group  centered stackable itemsPerRow={2} >
 					{projectCards}
 				</Card.Group>
