@@ -79,10 +79,11 @@ const Projects = ()=> {
  ))
 	return(
 		<div>
-			<Segment fluid style={{ backgroundColor: '255,255,250' }} verticalAlign='justify' color='brown'>
-				<Header size='huge' textAlign='center' color='brown' font-family='FinkHeavy' >Projects</Header>
-			</Segment>
+			{/* <Segment fluid style={{ backgroundColor: '255,255,250' }} verticalAlign='justify' color='brown'> */}
+				<Header size='huge' textAlign='center' color='brown' font-family='FinkHeavy'fluid style={{ padding: '.5em'}}  >Projects</Header>
+			{/* </Segment> */}
 			<Segment fluid style={{ padding: '3em', marginBottom:'2em', backgroundColor: 'rgb(129,241,247)' }} verticalAlign='justify' color='brown'>
+				{/* <Header size='huge' textAlign='center' color='brown' font-family='FinkHeavy' >Projects</Header> */}
 				<Card.Group  centered stackable itemsPerRow={2} >
 					{projectCards}
 				</Card.Group>

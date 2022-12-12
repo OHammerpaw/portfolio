@@ -9,11 +9,9 @@ const Technology = ()=> {
 
 	return(
 		<div>
-		
-			<Segment vertical color='brown'>
-		
-			<Header size='huge' textAlign='center' color='teal'>Skills</Header>
-			<Container fluid textAlign='center'>
+			<Header size='huge' textAlign='center' color='brown'>Skills</Header>
+			<Segment vertical color='brown' style={{backgroundColor: 'rgb(157,252,176)'}}>
+			<Container fluid textAlign='center' style={{backgroundColor: 'rgb(157,252,176)'}}>
 				
 				<Icon className='devicon-express-original' size ='huge' color='brown'/>
 
