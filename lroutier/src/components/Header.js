@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Grid, Container, Header, Icon, IconGroup } from 'semantic-ui-react'
+import { Image, Container, Header, Icon, IconGroup } from 'semantic-ui-react'
 
 const PortfolioHeader = () => {
 
@@ -9,12 +9,7 @@ const PortfolioHeader = () => {
             <Image style={{marginBottom: '.5em', marginTop:'.5em'}} src={`${process.env.PUBLIC_URL}/images/header.png`} />
         </Container>
         <Container fluid  textAlign='center' className='header' style={{backgroundColor: 'rgb(255,255,250)'}}>
-                {/* <Header as='h1' content='Lauren Routier' style={{fontfamily: 'FinkHeavy',fontSize: '4em', marginTop: '1em', color:'rgb(196, 141, 63)'}}> */}
                 <Header>
-                {/* <Header />
-                <Header.Subheader>
-                Full Stack Developer
-                </Header.Subheader> */}
                 <Header.Subheader>
                     <IconGroup  size='big' style={{marginBottom: '.5em', marginTop:'.5em', backgroundColor: 'rgb(255,255,250)'}}>
                     <a 
